@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(226, 143, 226);
+    
+}
+h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #750b14;
+    isolation: isolate;
+    position: relative;
+    width: fit-content;
+    font-weight: bold;
+  }
+  
+   h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #c98193;
+    transition: height 350ms;
+    z-index: -1;
+  }
+  
+   h1:hover::before {
+    height: 50%;
+    
+  
+  }
+  .text{
+    font-size: 3rem;
+    background: linear-gradient(90deg, red, rgb(255, 0, 234), rgb(128, 47, 0), rgb(14, 14, 119), purple);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent;
+    animation: gradient-animation 5s linear infinite;
+}
+
+  
+
+  #message{
+    background-color: rgb(255, 255, 124);
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    left: 22%;
+    width: 50%;
+    height: 300px;
+    position: fixed;
+    color: red;
+    font-weight: bold;
+    border: solid brown 2px;
+    border-radius: 5%;
+    
+  }
+  #message p{
+    color: rgb(60, 163, 40);
+  }
+  #containmes{
+    padding-top: 40px;
+    margin: auto;
+    width: 90%;
+    
+  }
+  .close{
+    color: rgb(241, 14, 14);
+    background-color: black;
+    position: absolute;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    top: 10px;
+    cursor: pointer;
+
+  }
+
+  #message .span1{
+    width: 20px;
+    height: 20px;
+  
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    margin: auto;
+    display: inline-block;
+  
+  }
+
+
+
+  
+  #message .span2{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 255, 85);
+    border-radius: 50%;
+    margin: auto;
+    display: inline-block;
+  }
+  
+  #message .span3{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(217, 255, 0);
+    border-radius: 50%;
+    margin: auto;
+    display: inline-block;
+  }
